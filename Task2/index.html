@@ -99,8 +99,31 @@
                 </nav>
                 <img src='https://www.seoclerk.com/pics/569323-1bpEHf1510684912.jpg' alt='movie'/>
             </div>
-        )
-    }
+        );
+    };
+
+    const History = (props) => {
+        return (
+            <div className="movie-history">
+                <img width="200" src={props.img} alt={props.name}/>
+                <div>
+                    <h1>First movie: {props.name}</h1>
+                    <p className="description">Plot: {props.description}</p>
+                    <p className="description">Confession: {props.list}</p>
+                </div>
+            </div>
+        );
+    };
+
+    const content = (
+        <div className="about-movie">
+            <History name={"Arrival of a Train at La Ciotat Station"} img='https://2.bp.blogspot.com/-m95-R0Q_WhY/Tvli9Xzs9EI/AAAAAAAABZU/FYmwJxD3UBE/s400/%25D1%2581%25D0%25B0%25D0%25BC%25D1%258B%25D0%25B9+%25D0%25BF%25D0%25B5%25D1%2580%25D0%25B2%25D1%258B%25D0%25B9+%25D1%2584%25D0%25B8%25D0%25BB%25D1%258C%25D0%25BC+%25D0%25B2+%25D0%25B8%25D1%2581%25D1%2582%25D0%25BE%25D1%2580%25D0%25B8%25D0%25B8+%25D1%2587%25D0%25B5%25D0%25BB%25D0%25BE%25D0%25B2%25D0%25B5%25D1%2587%25D0%25B5%25D1%2581%25D1%2582%25D0%25B2%25D0%25B0.jpg'
+                     description='Despite the simplicity of the plot (the screen shows only a train stopping at the platform of the La Ciotat station and passengers moving along the carriages), the film gained wide popularity. According to testimonies (possibly greatly exaggerated), the first showing of the film caused panic among the public, which was not psychologically prepared to perceive the "living" image of a train moving towards the audience, shown in life-size. One of the most important expressive means of this video was the continuous transition from a general to a medium and close-up shot with a stationary camera.'
+                     list='"Arrival of a Train" was included in the list of "The Scariest Scenes in Cinema" by Filmsite.org'/>
+        </div>
+    )
+
+
 
 
     const App = () => (
@@ -108,6 +131,7 @@
             {header}
             {carousel}
             <NavigationMenu/>
+            {content}
         </div>
     );
 ReactDOM.render(<App/>, document.getElementById('app'));
