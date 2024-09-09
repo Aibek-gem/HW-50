@@ -34,6 +34,26 @@
         </header>
     )
 
+    const Card = (props) => {
+        return (
+            <div className="movie-cards">
+                <img width="100%" src={props.img} alt={props.name}/>
+                <h1>{props.name}</h1>
+                <p className="year">Date of the film: {props.date}</p>
+            </div>
+        );
+    };
+
+    const carousel = (
+        <div className="card">
+            <Card name={"The Shawshank Redemption"} date={1994} img='https://basket-08.wbbasket.ru/vol1141/part114175/114175504/images/c516x688/1.webp'/>
+            <Card name={"21"} date={2008} img='https://upload.wikimedia.org/wikipedia/en/a/a8/21_%282008_film%29.jpg'/>
+            <Card name={"The Bank Job"} date={2008} img='https://m.media-amazon.com/images/I/51BniiqtIvL._AC_UF894,1000_QL80_.jpg'/>
+            <Card name={"The Bank Job"} date={2008} img='https://m.media-amazon.com/images/I/51BniiqtIvL._AC_UF894,1000_QL80_.jpg'/>
+            <Card name={"The Bank Job"} date={2008} img='https://m.media-amazon.com/images/I/51BniiqtIvL._AC_UF894,1000_QL80_.jpg'/>
+        </div>
+    )
+
 
 
 </script>
