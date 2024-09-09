@@ -1,0 +1,97 @@
+#container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-radius: 0 0 5px 5px;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.form {
+    align-self: center;
+    padding-right: 2px;
+}
+
+.search-input {
+    margin-right: 10px;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.btn-form {
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 4px;
+}
+.movie-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    width: 200px;
+    padding: 20px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+}
+.year {
+    margin-top: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.menu h3{
+    color: #fff;
+}
+
+.main-nav {
+    padding-left: 10px;
+}
+
+.main-nav li {
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu img {
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.movie-history {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.foot {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px;
+}
