@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies site</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="app"></div>
+
+<script type="text/babel">
+    const Header = (props) => {
+        return (
+            <header className="header">
+                <a className="logo" href="#">
+                    <img width="100" src={props.img} alt='Logo'/>
+                </a>
+                <form className="form">
+                    <input type="text" className="search-input" placeholder="Search..."/>
+                    <button type="submit" className="btn-form">Ok</button>
+                </form>
+            </header>
+        )
+    }
+
+    const header = (
+        <header>
+            <Header img='https://cdn.textstudio.com/output/sample/normal/3/4/5/6/movie-logo-860-6543.png'/>
+        </header>
+    )
+
+
+
+</script>
+</body>
+
+
+</html>
